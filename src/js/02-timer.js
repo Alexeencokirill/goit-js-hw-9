@@ -53,6 +53,7 @@ const options = {
   }
 
 startBtn.addEventListener('click', () => {
+    text.disabled = true;
     let timer = setInterval(() => {
         let countdown = new Date(text.value) - new Date();
         startBtn.disabled = true;
